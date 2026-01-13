@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula Virtual APSD - Temas 1 al 7</title>
+    <title>Manual de Apoyo Domiciliario - APSD</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root { --primary: #2c3e50; --secondary: #2980b9; --accent: #27ae60; --warning: #f39c12; --bg: #f4f7f6; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: var(--bg); }
-        header { background: var(--primary); color: white; padding: 2.5rem 1rem; text-align: center; }
-        nav { background: white; padding: 1rem; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; z-index: 1000; }
-        nav a { text-decoration: none; color: var(--primary); font-size: 0.9rem; font-weight: 600; padding: 6px 12px; border-radius: 15px; border: 1px solid #ddd; transition: 0.3s; }
+        :root { --primary: #2c3e50; --secondary: #2980b9; --accent: #27ae60; --text: #333; --light: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: var(--text); margin: 0; background: #e9ecef; }
+        header { background: var(--primary); color: white; padding: 4rem 1rem; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        nav { background: white; padding: 1rem; position: sticky; top: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; z-index: 1000; }
+        nav a { text-decoration: none; color: var(--primary); font-weight: bold; padding: 8px 16px; border-radius: 5px; transition: 0.3s; font-size: 0.9rem; border: 1px solid #dee2e6; }
         nav a:hover { background: var(--secondary); color: white; border-color: var(--secondary); }
-        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-        section { background: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); scroll-margin-top: 80px; }
-        h2 { color: var(--secondary); border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h3 { color: var(--primary); display: flex; align-items: center; gap: 10px; }
-        .example { background: #eef7ff; border-left: 5px solid var(--secondary); padding: 1rem; margin: 1rem 0; border-radius: 4px; }
-        .activity { background: #fff9e6; border: 2px dashed var(--warning); padding: 1.2rem; border-radius: 10px; margin-top: 1.5rem; }
-        .btn-resp { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; margin-top: 10px; }
-        footer { text-align: center; padding: 2rem; background: #333; color: white; margin-top: 3rem; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 20px; }
+        section { background: white; padding: 3rem; border-radius: 15px; margin-bottom: 3rem; shadow: 0 10px 30px rgba(0,0,0,0.08); scroll-margin-top: 100px; }
+        h2 { color: var(--secondary); border-bottom: 3px solid var(--secondary); padding-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        h3 { color: #2c3e50; margin-top: 2rem; background: #f1f4f9; padding: 10px; border-radius: 5px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .destacado { background: #fff4e5; border-left: 6px solid #f39c12; padding: 1.5rem; margin: 1.5rem 0; border-radius: 5px; }
+        .actividad { background: #e8f5e9; border: 2px solid #2e7d32; padding: 2rem; border-radius: 10px; margin-top: 2rem; }
+        .btn-ver { background: #2e7d32; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .btn-ver:hover { background: #1b5e20; }
+        footer { background: var(--primary); color: white; text-align: center; padding: 3rem; margin-top: 4rem; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1><i class="fas fa-book-reader"></i> Apoyo Domiciliario (APSD)</h1>
-    <p>Guía de estudio interactiva para el alumnado</p>
+    <h1><i class="fas fa-home"></i> Módulo de Apoyo Domiciliario</h1>
+    <p>Atención a Personas en Situación de Dependencia (APSD)</p>
 </header>
 
 <nav>
@@ -34,75 +37,94 @@
     <a href="#t2">T2: Economía</a>
     <a href="#t3">T3: Limpieza</a>
     <a href="#t4">T4: Seguridad</a>
-    <a href="#t5">T5-T7: Cocina</a>
+    <a href="#t5">T5: Alimentos</a>
+    <a href="#t6">T6: Dietas</a>
+    <a href="#t7">T7: Cocina</a>
 </nav>
 
 <div class="container">
 
     <section id="t1">
-        <h3><i class="fas fa-calendar-alt"></i> Tema 1: Planificación de la Unidad de Convivencia</h3>
-        <p>Se centra en organizar el hogar de manera que se cubran las necesidades de la persona dependiente. La herramienta principal es el <strong>Plan de Trabajo</strong>.</p>
-        <div class="activity">
-            <strong>Pregunta:</strong> ¿Qué debemos valorar antes de planificar? <br>
-            <button class="btn-resp" onclick="alert('La situación física, cognitiva y social de la persona y su entorno.')">Ver respuesta</button>
+        <h2>Tema 1: Planificación de la Unidad de Convivencia</h2>
+        <p>La planificación consiste en organizar las tareas y recursos necesarios para cubrir las necesidades de los usuarios en su domicilio. No es algo estático, debe ser flexible.</p>
+        <h3>Elementos Clave:</h3>
+        <ul>
+            <li><strong>Valoración:</strong> Conocer las capacidades y limitaciones del usuario.</li>
+            <li><strong>Objetivos:</strong> ¿Qué queremos lograr? (Ej: Mantener la autonomía).</li>
+            <li><strong>El Plan de Trabajo:</strong> Documento donde se especifican tareas, tiempos y frecuencias.</li>
+        </ul>
+        <div class="destacado">
+            <strong>Importante:</strong> La planificación debe respetar siempre los hábitos y la intimidad de la persona usuaria.
+        </div>
+        <div class="actividad">
+            <h4><i class="fas fa-pencil-alt"></i> Actividad de Estudio:</h4>
+            <p>¿Qué diferencia hay entre una tarea diaria y una tarea periódica? Pon un ejemplo de cada una.</p>
+            <button class="btn-ver" onclick="alert('Diaria: Hacer la cama o higiene personal. Periódica: Limpiar cristales o cambiar cortinas.')">Comprobar respuesta</button>
         </div>
     </section>
 
     <section id="t2">
-        <h3><i class="fas fa-wallet"></i> Tema 2: Gestión Económica y Administrativa</h3>
-        <p>El técnico ayuda a la familia a gestionar sus recursos. Puntos clave:</p>
+        <h2>Tema 2: Gestión Económica y Administrativa</h2>
+        <p>El apoyo en la economía doméstica busca garantizar que los recursos económicos sean suficientes para cubrir las necesidades básicas.</p>
+        <h3>Contenidos fundamentales:</h3>
         <ul>
-            <li><strong>Presupuesto familiar:</strong> Diferenciar entre gastos fijos (alquiler, luz) y variables (ocio, imprevistos).</li>
-            <li><strong>Trámites:</strong> Apoyo en la gestión de recibos, solicitud de ayudas y organización de documentos.</li>
-            <li><strong>Ahorro:</strong> Fomentar el consumo responsable de energía y agua.</li>
+            <li><strong>El Presupuesto:</strong> Control de ingresos y gastos.</li>
+            <li><strong>Gestión de Documentos:</strong> Organización de facturas (luz, agua, gas) y documentación sanitaria.</li>
+            <li><strong>Técnicas de Compra:</strong> Comparar precios, leer etiquetas y evitar compras impulsivas.</li>
         </ul>
-        <div class="example">
-            <strong>Ejemplo:</strong> Ayudar al usuario a revisar la factura de la luz para comprobar si tiene derecho al bono social térmico/eléctrico.
-        </div>
-        <div class="activity">
-            <strong>Actividad:</strong> Clasifica "La compra de una televisión nueva" como gasto fijo o variable. <br>
-            <button class="btn-resp" onclick="alert('Es un gasto variable (y prescindible en caso de crisis económica).')">Ver respuesta</button>
+        <div class="destacado">
+            <strong>Consejo:</strong> Ayudar al usuario a identificar "gastos hormiga" (pequeños gastos innecesarios) para mejorar su ahorro.
         </div>
     </section>
 
     <section id="t3">
-        <h3><i class="fas fa-broom"></i> Tema 3: Mantenimiento y Limpieza del Hogar</h3>
-        <p>La higiene del domicilio es fundamental para la salud del usuario. Se organiza por zonas:</p>
+        <h2>Tema 3: Mantenimiento y Organización de la Vivienda</h2>
+        <p>Un hogar limpio es esencial para prevenir infecciones y mejorar el bienestar emocional del dependiente.</p>
+        <h3>Higiene por Estancias:</h3>
         <ul>
-            <li><strong>Zonas críticas:</strong> Cocina y Baño (requieren desinfección diaria).</li>
-            <li><strong>Mantenimiento de superficies:</strong> Uso de productos adecuados para madera, cristales, acero o textiles.</li>
-            <li><strong>Organización:</strong> Mantener el orden para facilitar la movilidad de la persona dependiente.</li>
+            <li><strong>El Baño:</strong> Desinfección diaria para evitar moho y bacterias.</li>
+            <li><strong>La Cocina:</strong> Limpieza inmediata tras cocinar para evitar plagas.</li>
+            <li><strong>Dormitorios:</strong> Ventilación diaria (mínimo 10-15 minutos) y cambio de sábanas semanal.</li>
         </ul>
-        <div class="example">
-            <strong>Regla de oro:</strong> Limpiar siempre de arriba hacia abajo y de dentro hacia afuera para no ensuciar lo ya limpiado.
-        </div>
-        <div class="activity">
-            <strong>Reto:</strong> ¿Qué estancia del hogar requiere mayor control bacteriológico? <br>
-            <button class="btn-resp" onclick="alert('La cocina (por la manipulación de alimentos) y el cuarto de baño.')">Ver respuesta</button>
+        <div class="destacado">
+            <strong>Uso de Productos:</strong> Diferenciar entre Limpiadores (quitan suciedad) y Desinfectantes (matan microorganismos).
         </div>
     </section>
 
     <section id="t4">
-        <h3><i class="fas fa-user-shield"></i> Tema 4: Prevención de Riesgos</h3>
-        <p>Identificación de peligros: caídas, incendios, intoxicaciones y cortes. Es vital realizar una adaptación del entorno (ayudas técnicas).</p>
-        <div class="activity">
-            <strong>Pregunta:</strong> ¿Cuál es el riesgo más común en mayores de 65 años? <br>
-            <button class="btn-resp" onclick="alert('Las caídas, causadas frecuentemente por alfombras y mala iluminación.')">Ver respuesta</button>
+        <h2>Tema 4: Prevención de Riesgos en el Domicilio</h2>
+        <p>Este tema es crítico para la seguridad física del técnico y del usuario.</p>
+        <h3>Riesgos Comunes y Soluciones:</h3>
+        <ul>
+            <li><strong>Caídas:</strong> Instalar barras de apoyo en el baño y quitar alfombras.</li>
+            <li><strong>Quemaduras:</strong> Usar los fuegos interiores de la placa y orientar los mangos de las sartenes hacia adentro.</li>
+            <li><strong>Electricidad:</strong> No sobrecargar enchufes ni manipularlos con las manos húmedas.</li>
+        </ul>
+        <div class="actividad">
+            <h4><i class="fas fa-shield-alt"></i> Caso Crítico:</h4>
+            <p>Si huele a gas en el domicilio, ¿qué es lo primero que debes hacer?</p>
+            <button class="btn-ver" onclick="alert('1. Abrir ventanas. 2. Cerrar llave de paso. 3. NO encender luces ni cerillas. 4. Avisar a emergencias.')">Ver protocolo</button>
         </div>
     </section>
 
     <section id="t5">
-        <h3><i class="fas fa-utensils"></i> Temas 5, 6 y 7: Alimentación y Nutrición</h3>
-        <p>Gestión completa de la alimentación: desde la lista de la compra hasta la cocina y conservación.</p>
-        <div class="example">
-            <strong>Técnica Culinaria:</strong> Para personas con hipertensión, usar técnicas como el papillote o vapor que conservan el sabor sin usar sal.
+        <h2>Temas 5, 6 y 7: Alimentación, Dietética y Cocina</h2>
+        <p>La nutrición es la medicina preventiva más importante en el domicilio.</p>
+        <h3>Puntos Clave para Estudiar:</h3>
+        <ul>
+            <li><strong>Tema 5 (Compra):</strong> Priorizar productos de temporada y vigilar la cadena de frío.</li>
+            <li><strong>Tema 6 (Dietas):</strong> Adaptar la textura (triturados) para personas con disfagia y reducir sal para hipertensos.</li>
+            <li><strong>Tema 7 (Técnicas):</strong> El uso del horno, microondas y vapor para cocinar de forma saludable y rápida.</li>
+        </ul>
+        <div class="destacado">
+            <strong>Seguridad Alimentaria:</strong> No dejar comida cocinada a temperatura ambiente más de 2 horas.
         </div>
     </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2024 - Web Educativa de Apoyo Domiciliario</p>
+    <p>&copy; 2024 Portal Didáctico APSD<br>Material diseñado para el éxito académico de los estudiantes.</p>
 </footer>
 
 </body>
