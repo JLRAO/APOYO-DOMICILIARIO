@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Virtual: Apoyo Domiciliario</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #2c3e50; --secondary: #3498db; --accent: #e74c3c; --light: #f4f7f6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; background: var(--light); }
+        header { background: var(--primary); color: white; padding: 2rem; text-align: center; }
+        nav { background: #fff; padding: 1rem; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; z-index: 1000; }
+        nav a { text-decoration: none; color: var(--primary); font-weight: bold; padding: 5px 10px; border-radius: 4px; transition: 0.3s; }
+        nav a:hover { background: var(--secondary); color: white; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 2rem; }
+        section { background: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h2 { color: var(--secondary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; }
+        .example { background: #e8f4fd; border-left: 5px solid var(--secondary); padding: 1rem; margin: 1rem 0; font-style: italic; }
+        .activity { background: #fff3cd; border: 1px dashed #856404; padding: 1.5rem; border-radius: 8px; }
+        .btn-check { background: var(--secondary); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+        footer { text-align: center; padding: 2rem; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><i class="fas fa-home"></i> Módulo: Apoyo Domiciliario</h1>
+    <p>Ciclo Atención a Personas en Situación de Dependencia (APSD)</p>
+</header>
+
+<nav>
+    <a href="#tema1">Tema 1: Planificación</a>
+    <a href="#tema2">Tema 2: Economía</a>
+    <a href="#tema3">Tema 3: Limpieza</a>
+    <a href="#tema4">Tema 4: Seguridad</a>
+    <a href="#tema5">Temas 5-7: Alimentación</a>
+</nav>
+
+<div class="container">
+    
+    <section id="tema1">
+        <h2>Tema 1: Planificación de la Unidad de Convivencia</h2>
+        <p>La planificación es la herramienta clave para organizar las tareas domésticas y el cuidado de los usuarios. Incluye la definición de objetivos, horarios y el reparto de tareas entre el equipo interdisciplinar y la familia.</p>
+        <div class="example">
+            <strong>Ejemplo:</strong> Elaboración de un cuadrante semanal de tareas donde se especifique qué días se hace la limpieza general y qué días se dedica al acompañamiento médico.
+        </div>
+        <div class="activity">
+            <h4><i class="fas fa-edit"></i> Actividad Rápida:</h4>
+            <p>¿Cuál es el primer paso para realizar una planificación efectiva en un domicilio?</p>
+            <button class="btn-check" onclick="alert('Respuesta: La valoración inicial de las necesidades de la unidad de convivencia.')">Ver Respuesta</button>
+        </div>
+    </section>
+
+    <section id="tema4">
+        <h2>Tema 4: Prevención de Riesgos en el Domicilio</h2>
+        <p>Garantizar un entorno seguro es prioritario. Debemos identificar riesgos físicos (caídas, cortes, quemaduras) y riesgos biológicos o químicos.</p>
+        <ul>
+            <li><strong>Caídas:</strong> Eliminar alfombras sueltas y mejorar la iluminación.</li>
+            <li><strong>Intoxicaciones:</strong> No mezclar productos de limpieza (lejía + amoníaco).</li>
+            <li><strong>Incendios:</strong> Controlar hornillos y regletas eléctricas sobrecargadas.</li>
+        </ul>
+        <div class="example">
+            <strong>Ejemplo:</strong> Al observar que un usuario tiene cables por el suelo en el pasillo, el técnico debe canalizarlos o pegarlos a la pared inmediatamente.
+        </div>
+        <div class="activity">
+            <h4><i class="fas fa-exclamation-triangle"></i> Reto de Seguridad:</h4>
+            <p>Si encuentras un bote de limpieza sin etiqueta, ¿qué debes hacer?</p>
+            <button class="btn-check" onclick="alert('Respuesta: Nunca usarlo. Se debe eliminar siguiendo los protocolos de residuos o etiquetarlo solo si se conoce con certeza absoluta su contenido.')">Ver Respuesta</button>
+        </div>
+    </section>
+
+    <section id="tema5">
+        <h2>Temas 5, 6 y 7: Alimentación y Nutrición</h2>
+        <p>Abarca desde la compra responsable hasta la elaboración de menús equilibrados adaptados a patologías (diabetes, hipertensión, etc.).</p>
+        <div class="example">
+            <strong>Ejemplo:</strong> Técnica de cocina al vapor para conservar nutrientes en dietas de convalecencia.
+        </div>
+        <div class="activity">
+            <h4><i class="fas fa-utensils"></i> Mini-Test:</h4>
+            <p>¿Qué es la contaminación cruzada?</p>
+            <button class="btn-check" onclick="alert('Respuesta: Es el paso de microorganismos de un alimento contaminado (normalmente crudo) a otro que ya está listo para consumir.')">Ver Respuesta</button>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Aula Virtual APSD - Material Didáctico de Apoyo Domiciliario</p>
+</footer>
+
+</body>
+</html>
